@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailMovieActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="16dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_detail_poster"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/poster_dragon" />
+
+        <TextView
+            android:id="@+id/txt_detail_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="24sp"
+            android:layout_below="@id/img_detail_poster"
+            android:layout_marginTop="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:id="@+id/txt_detail_year"
+            android:layout_below="@id/txt_detail_title"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/app_name"
+            android:id="@+id/txt_detail_description"
+            android:layout_below="@id/txt_detail_year"
+            android:layout_marginTop="24dp"
+            android:textSize="14sp"/>
+    </RelativeLayout>
+</LinearLayout>
